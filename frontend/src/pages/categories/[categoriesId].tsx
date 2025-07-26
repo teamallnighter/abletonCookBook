@@ -36,6 +36,8 @@ const EditCategories = () => {
 
     description: '',
 
+    parent: null,
+
   }
   const [initialValues, setInitialValues] = useState(initVals)
 
@@ -97,6 +99,19 @@ const EditCategories = () => {
 
     <FormField label="Description" hasTextareaHeight>
         <Field name="description" as="textarea" placeholder="Description" />
+    </FormField>
+
+    <FormField label='Parent' labelFor='parent'>
+        <Field
+            name='parent'
+            id='parent'
+            component={SelectField}
+            options={initialValues.parent}
+            itemRef={'categories'}
+
+            showField={'name'}
+
+        ></Field>
     </FormField>
 
               <BaseDivider />

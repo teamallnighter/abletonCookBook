@@ -58,6 +58,25 @@ export default {
             return {label: val.firstName, id: val.id}
         },
 
+        categoriesManyListFormatter(val) {
+            if (!val || !val.length) return []
+            return val.map((item) => item.name)
+        },
+        categoriesOneListFormatter(val) {
+            if (!val) return ''
+            return val.name
+        },
+        categoriesManyListFormatterEdit(val) {
+            if (!val || !val.length) return []
+            return val.map((item) => {
+              return {id: item.id, label: item.name}
+            });
+        },
+        categoriesOneListFormatterEdit(val) {
+            if (!val) return ''
+            return {label: val.name, id: val.id}
+        },
+
         recipesManyListFormatter(val) {
             if (!val || !val.length) return []
             return val.map((item) => item.title)

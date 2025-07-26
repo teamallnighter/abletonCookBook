@@ -252,8 +252,6 @@ const UsersView = () => {
 
                                 <th>Description</th>
 
-                                <th>Genre</th>
-
                                 <th>DifficultyLevel</th>
 
                                 <th>UploadDate</th>
@@ -277,10 +275,6 @@ const UsersView = () => {
 
                                     <td data-label="description">
                                         { item.description }
-                                    </td>
-
-                                    <td data-label="genre">
-                                        { item.genre }
                                     </td>
 
                                     <td data-label="difficulty_level">

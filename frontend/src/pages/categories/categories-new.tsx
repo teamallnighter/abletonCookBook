@@ -29,6 +29,8 @@ const initialValues = {
 
     description: '',
 
+    parent: '',
+
 }
 
 const CategoriesNew = () => {
@@ -69,6 +71,10 @@ const CategoriesNew = () => {
     <FormField label="Description" hasTextareaHeight>
         <Field name="description" as="textarea" placeholder="Description" />
     </FormField>
+
+  <FormField label="Parent" labelFor="parent">
+      <Field name="parent" id="parent" component={SelectField} options={[]} itemRef={'categories'}></Field>
+  </FormField>
 
               <BaseDivider />
               <BaseButtons>

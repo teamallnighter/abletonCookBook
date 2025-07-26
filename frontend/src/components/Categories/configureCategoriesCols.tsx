@@ -54,6 +54,26 @@ export const loadColumns = async (
         },
 
         {
+            field: 'parent',
+            headerName: 'Parent',
+            flex: 1,
+            minWidth: 120,
+            filterable: false,
+            headerClassName: 'datagrid--header',
+            cellClassName: 'datagrid--cell',
+
+            editable: true,
+            sortable: false,
+            type: 'singleSelect',
+            getOptionValue: (value: any) => value?.id,
+            getOptionLabel: (value: any) => value?.label,
+            valueOptions: await callOptionsApi('categories'),
+            valueGetter: (params: GridValueGetterParams) =>
+                params?.value?.id ?? params?.value,
+
+        },
+
+        {
             field: 'actions',
             type: 'actions',
             minWidth: 30,

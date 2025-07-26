@@ -27,7 +27,7 @@ const RecipesTablesPage = () => {
           {label: 'Rating', title: 'rating', number: 'true'},
           {label: 'UploadDate', title: 'upload_date', date: 'true'},
 
-    {label: 'Genre', title: 'genre', type: 'enum', options: ['Electronic','HipHop','Rock','Jazz','Classical']},{label: 'DifficultyLevel', title: 'difficulty_level', type: 'enum', options: ['Beginner','Intermediate','Advanced']},{label: 'LicenseType', title: 'license_type', type: 'enum', options: ['CreativeCommons','Commercial','Personal']},
+    {label: 'DifficultyLevel', title: 'difficulty_level', type: 'enum', options: ['Beginner','Intermediate','Advanced']},{label: 'LicenseType', title: 'license_type', type: 'enum', options: ['CreativeCommons','Commercial','Personal']},
   ]);
     const addFilter = () => {
         const newItem = {

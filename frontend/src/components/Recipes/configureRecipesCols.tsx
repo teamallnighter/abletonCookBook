@@ -54,19 +54,6 @@ export const loadColumns = async (
         },
 
         {
-            field: 'genre',
-            headerName: 'Genre',
-            flex: 1,
-            minWidth: 120,
-            filterable: false,
-            headerClassName: 'datagrid--header',
-            cellClassName: 'datagrid--cell',
-
-            editable: true,
-
-        },
-
-        {
             field: 'difficulty_level',
             headerName: 'DifficultyLevel',
             flex: 1,
@@ -81,20 +68,7 @@ export const loadColumns = async (
 
         {
             field: 'device_chain',
-            headerName: 'DeviceChain',
-            flex: 1,
-            minWidth: 120,
-            filterable: false,
-            headerClassName: 'datagrid--header',
-            cellClassName: 'datagrid--cell',
-
-            editable: true,
-
-        },
-
-        {
-            field: 'audio_demo',
-            headerName: 'AudioDemo',
+            headerName: 'Device',
             flex: 1,
             minWidth: 120,
             filterable: false,

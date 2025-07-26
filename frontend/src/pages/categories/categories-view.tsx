@@ -58,6 +58,13 @@ const CategoriesView = () => {
                   <textarea className={'w-full'} disabled value={categories?.description} />
                 </FormField>
 
+                <div className={'mb-4'}>
+                    <p className={'block font-bold mb-2'}>Parent</p>
+
+                        <p>{categories?.parent?.name ?? 'No data'}</p>
+
+                </div>
+
                 <BaseDivider />
 
                 <BaseButton

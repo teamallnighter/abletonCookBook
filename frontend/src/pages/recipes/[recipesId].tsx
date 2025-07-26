@@ -36,8 +36,6 @@ const EditRecipes = () => {
 
     description: '',
 
-    genre: '',
-
     difficulty_level: '',
 
     creator: null,
@@ -111,22 +109,6 @@ const EditRecipes = () => {
 
     <FormField label="Description" hasTextareaHeight>
         <Field name="description" as="textarea" placeholder="Description" />
-    </FormField>
-
-    <FormField label="Genre" labelFor="genre">
-        <Field name="genre" id="genre" component="select">
-
-            <option value="Electronic">Electronic</option>
-
-            <option value="HipHop">HipHop</option>
-
-            <option value="Rock">Rock</option>
-
-            <option value="Jazz">Jazz</option>
-
-            <option value="Classical">Classical</option>
-
-        </Field>
     </FormField>
 
     <FormField label="DifficultyLevel" labelFor="difficulty_level">

@@ -80,15 +80,6 @@ const CardRecipes = ({
                 </div>
 
                 <div className='flex justify-between gap-x-4 py-3'>
-                    <dt className='text-gray-500 dark:text-dark-600'>Genre</dt>
-                    <dd className='flex items-start gap-x-2'>
-                        <div className='font-medium line-clamp-4'>
-                            { item.genre }
-                        </div>
-                    </dd>
-                </div>
-
-                <div className='flex justify-between gap-x-4 py-3'>
                     <dt className='text-gray-500 dark:text-dark-600'>DifficultyLevel</dt>
                     <dd className='flex items-start gap-x-2'>
                         <div className='font-medium line-clamp-4'>
@@ -98,19 +89,10 @@ const CardRecipes = ({
                 </div>
 
                 <div className='flex justify-between gap-x-4 py-3'>
-                    <dt className='text-gray-500 dark:text-dark-600'>DeviceChain</dt>
+                    <dt className='text-gray-500 dark:text-dark-600'>Device</dt>
                     <dd className='flex items-start gap-x-2'>
                         <div className='font-medium line-clamp-4'>
                             { item.device_chain }
-                        </div>
-                    </dd>
-                </div>
-
-                <div className='flex justify-between gap-x-4 py-3'>
-                    <dt className='text-gray-500 dark:text-dark-600'>AudioDemo</dt>
-                    <dd className='flex items-start gap-x-2'>
-                        <div className='font-medium line-clamp-4'>
-                            { item.audio_demo }
                         </div>
                     </dd>
                 </div>

@@ -26,11 +26,6 @@ module.exports = class RecipesDBApi {
         null
             ,
 
-        genre: data.genre
-        ||
-        null
-            ,
-
         difficulty_level: data.difficulty_level
         ||
         null
@@ -84,11 +79,6 @@ module.exports = class RecipesDBApi {
             null
             ,
 
-                genre: item.genre
-            ||
-            null
-            ,
-
                 difficulty_level: item.difficulty_level
             ||
             null
@@ -137,8 +127,6 @@ module.exports = class RecipesDBApi {
         if (data.title !== undefined) updatePayload.title = data.title;
 
         if (data.description !== undefined) updatePayload.description = data.description;
-
-        if (data.genre !== undefined) updatePayload.genre = data.genre;
 
         if (data.difficulty_level !== undefined) updatePayload.difficulty_level = data.difficulty_level;
 
@@ -344,13 +332,6 @@ module.exports = class RecipesDBApi {
                     ...where,
                     active: filter.active === true || filter.active === 'true'
                 };
-            }
-
-            if (filter.genre) {
-                where = {
-                    ...where,
-                genre: filter.genre,
-            };
             }
 
             if (filter.difficulty_level) {

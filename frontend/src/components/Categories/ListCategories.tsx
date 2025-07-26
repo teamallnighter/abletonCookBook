@@ -45,6 +45,11 @@ const ListCategories = ({ categories, loading, onDelete, currentPage, numPages, 
                                 <p className={'line-clamp-2'}>{ item.description }</p>
                             </div>
 
+                            <div className={'flex-1 px-3'}>
+                                <p className={'text-xs text-gray-500'}>Parent</p>
+                                <p className={'line-clamp-2'}>{ dataFormatter.categoriesOneListFormatter(item.parent) }</p>
+                            </div>
+
                           </Link>
                             <ListActionsPopover
                               onDelete={onDelete}

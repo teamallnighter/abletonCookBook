@@ -59,11 +59,6 @@ const RecipesView = () => {
                 </FormField>
 
                 <div className={'mb-4'}>
-                    <p className={'block font-bold mb-2'}>Genre</p>
-                    <p>{recipes?.genre ?? 'No data'}</p>
-                </div>
-
-                <div className={'mb-4'}>
                     <p className={'block font-bold mb-2'}>DifficultyLevel</p>
                     <p>{recipes?.difficulty_level ?? 'No data'}</p>
                 </div>

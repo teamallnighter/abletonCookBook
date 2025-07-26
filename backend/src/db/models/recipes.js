@@ -24,25 +24,6 @@ description: {
 
       },
 
-genre: {
-        type: DataTypes.ENUM,
-
-        values: [
-
-"Electronic",
-
-"HipHop",
-
-"Rock",
-
-"Jazz",
-
-"Classical"
-
-        ],
-
-      },
-
 difficulty_level: {
         type: DataTypes.ENUM,
 

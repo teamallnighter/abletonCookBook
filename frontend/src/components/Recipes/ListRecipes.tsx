@@ -46,23 +46,13 @@ const ListRecipes = ({ recipes, loading, onDelete, currentPage, numPages, onPage
                             </div>
 
                             <div className={'flex-1 px-3'}>
-                                <p className={'text-xs text-gray-500'}>Genre</p>
-                                <p className={'line-clamp-2'}>{ item.genre }</p>
-                            </div>
-
-                            <div className={'flex-1 px-3'}>
                                 <p className={'text-xs text-gray-500'}>DifficultyLevel</p>
                                 <p className={'line-clamp-2'}>{ item.difficulty_level }</p>
                             </div>
 
                             <div className={'flex-1 px-3'}>
-                                <p className={'text-xs text-gray-500'}>DeviceChain</p>
+                                <p className={'text-xs text-gray-500'}>Device</p>
                                 <p className={'line-clamp-2'}>{ item.device_chain }</p>
-                            </div>
-
-                            <div className={'flex-1 px-3'}>
-                                <p className={'text-xs text-gray-500'}>AudioDemo</p>
-                                <p className={'line-clamp-2'}>{ item.audio_demo }</p>
                             </div>
 
                             <div className={'flex-1 px-3'}>
