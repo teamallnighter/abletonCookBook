@@ -36,7 +36,7 @@ const EditCategories = () => {
 
     description: '',
 
-    parent: null,
+    subCategory: null,
 
   }
   const [initialValues, setInitialValues] = useState(initVals)
@@ -101,12 +101,12 @@ const EditCategories = () => {
         <Field name="description" as="textarea" placeholder="Description" />
     </FormField>
 
-    <FormField label='Parent' labelFor='parent'>
+    <FormField label='Sub Category' labelFor='subCategory'>
         <Field
-            name='parent'
-            id='parent'
+            name='subCategory'
+            id='subCategory'
             component={SelectField}
-            options={initialValues.parent}
+            options={initialValues.subCategory}
             itemRef={'categories'}
 
             showField={'name'}

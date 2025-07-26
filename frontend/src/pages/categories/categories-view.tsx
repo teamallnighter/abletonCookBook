@@ -59,9 +59,9 @@ const CategoriesView = () => {
                 </FormField>
 
                 <div className={'mb-4'}>
-                    <p className={'block font-bold mb-2'}>Parent</p>
+                    <p className={'block font-bold mb-2'}>Sub Category</p>
 
-                        <p>{categories?.parent?.name ?? 'No data'}</p>
+                        <p>{categories?.subCategory?.name ?? 'No data'}</p>
 
                 </div>
 

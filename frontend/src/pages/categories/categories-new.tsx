@@ -29,7 +29,7 @@ const initialValues = {
 
     description: '',
 
-    parent: '',
+    subCategory: '',
 
 }
 
@@ -72,8 +72,8 @@ const CategoriesNew = () => {
         <Field name="description" as="textarea" placeholder="Description" />
     </FormField>
 
-  <FormField label="Parent" labelFor="parent">
-      <Field name="parent" id="parent" component={SelectField} options={[]} itemRef={'categories'}></Field>
+  <FormField label="Sub Category" labelFor="subCategory">
+      <Field name="subCategory" id="subCategory" component={SelectField} options={[]} itemRef={'categories'}></Field>
   </FormField>
 
               <BaseDivider />

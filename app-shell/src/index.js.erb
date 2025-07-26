@@ -11,7 +11,7 @@ const vcsRoutes = require('./routes/vcs');
 
 // Function to initialize the Git repository
 function initRepo() {
-    const projectId = '33046';
+    const projectId = '<%= @schema['project']['project_id'] %>';
     return VCS.initRepo(projectId);
 }
 

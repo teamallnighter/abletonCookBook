@@ -54,8 +54,8 @@ export const loadColumns = async (
         },
 
         {
-            field: 'parent',
-            headerName: 'Parent',
+            field: 'subCategory',
+            headerName: 'Sub Category',
             flex: 1,
             minWidth: 120,
             filterable: false,

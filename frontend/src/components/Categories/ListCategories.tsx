@@ -46,8 +46,8 @@ const ListCategories = ({ categories, loading, onDelete, currentPage, numPages, 
                             </div>
 
                             <div className={'flex-1 px-3'}>
-                                <p className={'text-xs text-gray-500'}>Parent</p>
-                                <p className={'line-clamp-2'}>{ dataFormatter.categoriesOneListFormatter(item.parent) }</p>
+                                <p className={'text-xs text-gray-500'}>Sub Category</p>
+                                <p className={'line-clamp-2'}>{ dataFormatter.categoriesOneListFormatter(item.subCategory) }</p>
                             </div>
 
                           </Link>
